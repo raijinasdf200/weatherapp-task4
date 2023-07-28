@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #262626;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body::-webkit-scrollbar{
+    background-color: #004355;
+    width: 10px;
+}
+body::-webkit-scrollbar-button{
+    background-color: #006582;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0091b9;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.headerx{
+    width: 100%;
+    height: 10vh;
+    background-color: #00648066;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 333333;
+}
+.headerx-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.brand h2{
+    color: white;
+}
+.brand h2 span{
+    color: red;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    padding: 10%;
+}
+.nav a{
+    color:#a2a2a2;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+    position: relative;
+}
+.nav a:hover{
+    color: #fff;
+}
+.nav a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 158, 158);
+    width: 0;
+    height: 2px;
+    border-radius: 1px;
+    transition: 0.4s;
+}
+.nav a:hover:after{
+    width: 100%;
+}
+.active{
+    color: white !important;
+}
+.active::after{
+    width: 100% !important;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("../images/Firewatch Tower Live Wallpaper   WallpaperWaifu.jpg");
+
+}
+
+.overlay{
+    background-color: #18181885;
+    width: 100%;
+    height: 100%;
+
+}
+.main-content{
+    width: 80%;
+    height: 60%;
+    text-transform: capitalize;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left{
+    color: #fff;
+    width: 50%;
+    /* background-color: #a2a2a2; */
+    text-align: start;
+}
+.left h2{
+    margin-bottom: 15px;
+}
+.left p{
+    margin-left:8px;
+    color: #ccc;
+}
+.right{
+    background-color: #004355;
+    border: 5px solid #006582;
+    /* padding: 30px; */
+    width: 40%;
+    height: 60%;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+}
+.all-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    animation: icon-rotate 3s ease-in-out ;
+
+}
+@keyframes icon-rotate {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}
+.all-info h2 h6{display: inline;}
+.more-info p span{
+    display: block;
+    font-size: 11px;
+    text-align: start;
+}
+.index-main-content{
+    text-transform: capitalize;
+    width: 50%;
+    height: 50%;
+    background-color:#00141a96;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+} 
+.index-main-content h2{
+    color: #aaa;
+}
+.index-main-content h1{
+    color: rgb(0, 138, 212);
+}
+.index-main-content div{
+    text-align: center;
+    color: #666;
+    transition: 0.7s;
+}
+.index-main-content:hover .words{
+    color: white;
+}
+.down{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+.down a{
+    padding: 25px;
+    border: 1px solid #0091b9;
+    border-radius: 50%;
+
+}
+.donw a i{
+    font-size: 30px;
+
+}
+
+.introduction{
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    padding: 5%;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+}
+.introduction h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.introduction p{
+    color:#464646;
+    width: 80%;
+    margin: auto;
+    transition: 0.7s;
+
+}
+.introduction a{
+    margin-top: 20px;
+    display: block;
+    color: rgb(255, 158, 158);
+    transition: 0.4s;
+}
+.introduction a:hover{
+    color: rgb(213, 60, 60);
+}
+.introduction:hover .p-intro{
+    color: #aaa;
+}

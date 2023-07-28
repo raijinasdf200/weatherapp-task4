@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project medo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.js">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    {{>header}}
+    <div class="main index-main">
+        <div class="overlay">
+            <div class="index-main-content">
+                <h2>{{title}}</h2> 
+                <h1>{{webname}}</h1>
+                <div class="words">
+                    <p>{{disc}}</p>
+                    <p>{{discx}}</p>
+                </div>
+                
+            </div>
+            <div class="down">
+                <a href="#introduction">
+                    <i class="fa-solid fa-angles-down fa-bounce fa-2xl" style="color: #002b75;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="introduction" class="introduction">
+        <h2>{{title2}}</h2>
+        <p class="p-intro">{{desc2}}</p>
+        <a href="/checkweather">So Let's Get Started</a>
+    </div>
+    {{>footer}}
+    <script src="js/homePage.js"></script>
+    <script src="js/all.min.js"></script>
+    </body>
+</html>
